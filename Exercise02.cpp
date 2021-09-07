@@ -15,13 +15,22 @@ int main() {
    // ======== DO NOT CHANGE THE CODE GIVEN ABOVE ====================
    
    // 1. Create a dynamic Rectangle type variable (pointer)
+   Rectangle *r;
    // 2. Create a dynamic Rectangle Object set the length and width that was input from the keyboard
+   r = new Rectangle(length, width);
    // 3. Create a dynamic Circle type variable (pointer)
+   Circle *C;
    // 4. Create a dynamic Circle Object set radius that was input from the keyboard
+   C = new Circle(radius);
    // 5. Call the display method of the Rectangle Object
+   r->display();
    // 6. Call the display method of the Circle Object
+   C->display();
+
    // 7. Delete the Rectangle Object from memory
+   delete r;
    // 8. Delete the Circle Object from memory
+   delete C;
   
   
    // ============ DO NOT CHANGE THE CODE BELOW ===================
